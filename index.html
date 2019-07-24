@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    #back {
+        background-image: url('background.jpg');
+    }
+</style>
+
+
+<body id="back">
+    <center>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="navbar bg-primary">
+            <a href="#" class="navbar-brand text-white"></a>
+        </nav>
+
+        <br>
+        <div id="loginpage" class="container">
+
+            <br>
+            <div style="background-color:rgba(0,0,0,0.4)" id="logform" class="col-4">
+                <form class="p-3">
+                    <h2 style="color:white;">LOGIN</h2>
+                    <input placeholder="Username" type="text" required class="form-control" id="username">
+                    <br>
+                    <input placeholder="Password" type="password" required class="form-control" id="password">
+                    <br>
+                    <button class="btn btn-primary" onclick="Login()">Login</button>
+                </form>
+            </div>
+            <br>
+            <div style=" background-color:rgba(0,0,0,0.4)" id="regform" class="col-4 ">
+                <form class="p-3" id="formz">
+                    <h2 style="color:white;">REGISTER</h2>
+                    <input placeholder="Username" type="text" required class="form-control" id="r_username">
+                    <br>
+
+                    <input placeholder="Password" type="password" required class="form-control" id="r_password">
+                    <br>
+                    <input placeholder="Confirm Password" type="password" required class="form-control"
+                        id="r_confirmpassword">
+                    <br>
+                    <input placeholder="Email Address" type="email" required class="form-control" id="email">
+                    <br>
+
+                    <button class="btn btn-primary" type="submit" id="registering">Register</button>
+                </form>
+            </div>
+            <br><br>
+
+            <div class="col">
+                <div class="user" id="nameTR"></div>
+            </div>
+
+        </div>
+
+        <div id="userpage" class="container">
+            <h1 id="user"></h1>
+        </div>
+        <script src="main.js" async defer></script>
+</body>
+
+</html>
